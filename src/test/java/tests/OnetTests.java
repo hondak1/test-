@@ -5,6 +5,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import util.SeleniumExecutor;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 public class OnetTests {
 
     private OnetPage onetPage = new OnetPage();
@@ -53,6 +56,8 @@ public class OnetTests {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        assertTrue("window dont open", onetPage.isTitleClosed());
 
     }
 
