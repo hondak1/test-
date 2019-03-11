@@ -6,7 +6,7 @@ import org.openqa.selenium.support.How;
 
 public class OnetLocators {
 
-    @FindBy(how = How.XPATH, using = "[contains(text()='Wiadomości')]")
+    @FindBy(how = How.XPATH, using = "[contains(text()='Wiadomości')]") // dla kazdego kliku osobne find by
     public WebElement news;//pod news kryje sie wiadomosci i tak kazdy element
 
 }
