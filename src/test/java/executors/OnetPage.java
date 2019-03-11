@@ -16,7 +16,7 @@ public class OnetPage {
     public void openNews(){ // tu sobie nazywam otworz np cos tam (page summary)
         locators.news.click(); // kazda akcja osobno dla kazdego lokatora, czyli nowy void
     }
-public boolean isTitleClosed(){
+    public boolean isTitleClosed(){ //typ danych zwraca prawde albo falsz
 
        return locators.news2.isDisplayed(); // sprawdzi czy lokator sie wsyswietla , jak nie to false
 }
