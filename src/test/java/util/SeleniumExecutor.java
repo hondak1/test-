@@ -53,7 +53,7 @@ public class SeleniumExecutor {
             driver.navigate().to(url); //przkezuje referencje z metody
 
 
-        }catch (Exception e){
+        }catch (Exception e){ // jak sie nie otworzy to wywali blad i wydrukuje w konsoli 
 
             System.out.println(e);
 
