@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="projekty:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/projekty_jar</output-path>
+    <root id="archive" name="projekty.jar">
+      <element id="module-output" name="projekty" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/asdasd/client-combined-3.141.59.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/asdasd/libs/okio-1.14.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/asdasd/libs/okhttp-3.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/asdasd/libs/guava-25.0-jre.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/asdasd/libs/commons-exec-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/asdasd/libs/byte-buddy-1.8.15.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
