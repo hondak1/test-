@@ -1,6 +1,7 @@
 package executors;
 
 import locators.OnetLocators;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import util.SeleniumExecutor;
 
@@ -20,5 +21,12 @@ public class OnetPage {
 
        return locators.news2.isDisplayed(); // sprawdzi czy lokator sie wsyswietla , jak nie to false
 }
+
+    public void myszkaidle(){
+        Actions action = new Actions(SeleniumExecutor.getDriver());
+        action.moveToElement(locators.myszkaidle).perform();
+
+
+    }
 }
 

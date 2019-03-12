@@ -1,14 +1,23 @@
 package tests;
 
 import executors.OnetPage;
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import util.SeleniumExecutor;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+@FixMethodOrder(MethodSorters.JVM)
+
 public class OnetTests {
+
 
     private OnetPage onetPage = new OnetPage();
 
@@ -19,8 +28,18 @@ public class OnetTests {
 
     }
 
+
+
+    @AfterClass
+    public static void closepage(){
+
+     SeleniumExecutor.closeDriver();
+
+    }
+
     @Test
     public void openNewsTest(){ //nazwa testu mowi co bede testowal
+
 
         //zaczynam onet test i sobie opisuje co ten test ma robic, pozniej locator, i na koncyui onet page , void moga miec te same nazwy lepiej roznie
 

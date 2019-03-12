@@ -46,6 +46,15 @@ public class SeleniumExecutor {
         return driver;
     }
 
+    public static void closeDriver () {
+
+        driver.quit();
+
+    }
+
+
+
+
     public static void openPage(String url){      //jak jest zwykla to odnosisz sie przez referncje a jak statyczna tyo przez nazwe klasy bezposrednio
 
         try { //proboje otworyc streone a jak sie nie uda to przechwytuje blad i ten lad jest zapisany w e i wydrukuje w konsoli
@@ -53,7 +62,7 @@ public class SeleniumExecutor {
             driver.navigate().to(url); //przkezuje referencje z metody
 
 
-        }catch (Exception e){ // jak sie nie otworzy to wywali blad i wydrukuje w konsoli 
+        }catch (Exception e){ // jak sie nie otworzy to wywali blad i wydrukuje w konsoli
 
             System.out.println(e);
 

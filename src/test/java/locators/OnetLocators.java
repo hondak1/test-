@@ -11,6 +11,9 @@ public class OnetLocators {
 
     @FindBy(how = How.XPATH, using = "[contains(text()='Wiadomości')]")
     public WebElement news2;
+
+    @FindBy(how = How.XPATH, using = "jakis element")
+    public WebElement myszkaidle;
 }
 
 
