@@ -31,7 +31,7 @@ public class OnetTests {
 
 
     @AfterClass
-    public static void closepage(){
+    public static void closeDriver(){
 
      SeleniumExecutor.closeDriver();
 
