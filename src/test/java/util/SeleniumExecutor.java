@@ -48,7 +48,7 @@ public class SeleniumExecutor {
 
     public static void closeDriver () {
 
-        driver.quit();
+        driver.close();
 
     }
 
