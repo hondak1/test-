@@ -48,6 +48,8 @@ public class SeleniumExecutor {
 
     public static void closeDriver () {
 
+        executor=null; //bug z same ID, zamykale drivera i tworzy nowy w tej samej instancji selenium executora, trzeba nowa instancje executora 
+
         driver.close();
 
     }
