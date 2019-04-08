@@ -37,7 +37,7 @@ public class SeleniumExecutor {
 
     private static WebDriver createDriver (){
 
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/chromedriver/chromedriver.exe");
 
         driver = new ChromeDriver();
 

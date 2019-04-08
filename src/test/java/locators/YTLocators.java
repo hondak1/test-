@@ -6,7 +6,7 @@ import org.openqa.selenium.support.How;
 
 public class YTLocators {
 
-    @FindBy(how = How.XPATH, using = "//span[contains(text(),'Muzyka')]") // dla kazdego kliku osobne find by
+    @FindBy(how = How.XPATH, using = "//span[contains(text(),'Music')]") // dla kazdego kliku osobne find by
     public WebElement muzyka;//pod news kryje sie wiadomosci i tak kazdy element
 
 }

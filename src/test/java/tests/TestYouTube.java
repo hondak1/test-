@@ -2,12 +2,19 @@ package tests;
 
 import executors.YTPage;
 import executors.YoutubePage;
+import junit.framework.TestCase;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 import util.SeleniumExecutor;
 
-public class YoutubeTests {
+import static junit.framework.TestCase.fail;
+
+
+//@RunWith(JUnit4.class)
+public class TestYouTube extends TestCase {
 
     private YoutubePage YoutubePage = new YoutubePage();
 
@@ -24,7 +31,7 @@ public class YoutubeTests {
 
 
     @Test
-    public void Youtube(){
+    public void testYoutube(){
 
         try {
             Thread.sleep(10000);
@@ -39,6 +46,6 @@ public class YoutubeTests {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+    fail("dupa");
     }
 }
